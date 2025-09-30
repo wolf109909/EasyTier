@@ -2,27 +2,6 @@ name: EasyTier Docker
 
 on:
   workflow_dispatch:
-    inputs:
-      run_id:
-        description: 'The run id of EasyTier-Core Action in EasyTier repo'
-        type: number
-        default: 10228239965
-        required: true
-      image_tag:
-        description: 'Tag for this image build'
-        type: string
-        default: 'v2.4.5'
-        required: true
-      mark_latest:
-        description: 'Mark this image as latest'
-        type: boolean
-        default: false
-        required: true
-      mark_unstable:
-        description: 'Mark this image as unstable'
-        type: boolean
-        default: false
-        required: true
 
 jobs:
   docker:
